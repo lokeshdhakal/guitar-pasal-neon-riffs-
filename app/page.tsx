@@ -1,4 +1,4 @@
-import { Guitar, Music, Zap, ArrowRight, Volume2, Mic2 } from 'lucide-react'
+import { Music2, Music, Zap, ArrowRight, Volume2, Mic2 } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
             {/* Product Card 1: The Shredder */}
             <div className="metal-card group cursor-pointer">
               <div className="bg-neutral-800 rounded-lg aspect-square mb-6 flex items-center justify-center overflow-hidden">
-                <Guitar className="w-24 h-24 text-red-800 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+                <Music2 className="w-24 h-24 text-red-800 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold text-neutral-100 mb-3 uppercase tracking-wide">
                 The Shredder

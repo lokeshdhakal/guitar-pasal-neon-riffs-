@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-import { ShoppingCart, Menu, Guitar } from 'lucide-react'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ShoppingCart, Menu, Music2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Guitar Pasal - Unleash Your Sound',
@@ -17,13 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <nav className="sticky top-0 z-50 bg-neutral-950 border-b border-neutral-800 backdrop-blur-sm bg-opacity-95">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
               <div className="flex items-center space-x-2">
-                <Guitar className="w-8 h-8 text-red-800" strokeWidth={2.5} />
+                <Music2 className="w-8 h-8 text-red-800" strokeWidth={2.5} />
                 <span className="text-2xl font-bold tracking-wider text-neutral-100 uppercase">
                   Guitar Pasal
                 </span>
