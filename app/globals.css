@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-300;
+    background-color: #0a0a0a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+    letter-spacing: 0.05em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl text-neutral-100;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl text-neutral-100;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl text-neutral-200;
+  }
+}
+
+@layer components {
+  .metal-border {
+    @apply border border-neutral-800 shadow-lg;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .metal-card {
+    @apply bg-neutral-900 metal-border rounded-lg p-6 transition-all duration-300;
+  }
+
+  .metal-card:hover {
+    @apply border-neutral-700 shadow-xl;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .metal-button {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 uppercase tracking-wider text-sm;
+    @apply bg-neutral-800 text-neutral-100 border border-neutral-700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .metal-button:hover {
+    @apply bg-neutral-700 border-neutral-600 shadow-lg;
+    transform: translateY(-1px);
+  }
+
+  .metal-button-primary {
+    @apply metal-button bg-red-900 border-red-800 text-neutral-50;
+  }
+
+  .metal-button-primary:hover {
+    @apply bg-red-800 border-red-700;
+  }
+}
